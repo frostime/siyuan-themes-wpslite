@@ -1,8 +1,8 @@
 {
   "name": "siyuan-themes-wpslite",
-  "author": "TinkMingKing",
-  "url": "https://github.com/TinkMingKing/siyuan-themes-VSCode-Lite",
-  "version": "1.3.1",
+  "author": "frostime",
+  "url": "https://github.com/frostime/siyuan-themes-VSCode-Lite",
+  "version": "2.0.0",
   "displayName": {
     "default": "WPS Lite"
   },
@@ -18,14 +18,6 @@
     "en_US",
     "zh_CN"
   ],
-  "funding": {
-    "openCollective": "",
-    "patreon": "",
-    "github": "",
-    "custom": [
-      "https://afdian.net/a/MingKing"
-    ]
-  },
   "modes": [
     "light",
     "dark"

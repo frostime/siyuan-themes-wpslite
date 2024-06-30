@@ -2,28 +2,40 @@ name: CI
 
 on:
   push:
-    tags: 
+    tags:
       - 'v*'
 
 jobs:
   build:
-  
+
     runs-on: ubuntu-latest
-    
+
     permissions:
       contents: write
-    
+
     steps:
       - uses: actions/checkout@v3
       
       - name : jq theme.json
         run: |
           cat theme.json | jq .version
-          
-      - name: package
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Package
         run: |
-          find ./ -name 'theme.json' -o -name 'icon.png' -o -name 'preview.png' -o -name 'README.md' -o -name 'README_zh_CN.md' -o -name 'theme.css' -o -name 'theme.css.map'| xargs zip package.zip
-      
+          cd dist
+          zip -r ../package.zip .
+
       - uses: ncipollo/release-action@v1
         with:
           allowUpdates: true

@@ -3,5 +3,3 @@ node_modules/**
 dist/**
 *.css
 *.map
-!theme.css
-!theme.css.map

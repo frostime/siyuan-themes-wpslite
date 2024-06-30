@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.css",
   "scripts": {
-    "build:css": "sass ./theme.scss:dist/index.css --style compressed --embed-sources",
+    "build:css": "sass ./theme.scss:dist/theme.css --style compressed --embed-sources",
     "build:cp": "cp theme.json ./dist && cp *.png ./dist && cp README*.md ./dist",
-    "build": "npm run build:css && npm run build:cp"
+    "build": "npm run build:css && npm run build:cp",
+    "make-link": "node ./scripts/make-link.js"
   },
   "keywords": [],
   "author": "",
