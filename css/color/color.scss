@@ -48,6 +48,8 @@
     --mk-protyle-content-scrollbar-thumb--hover: var(--mk-filetree-scrollbar-thumb--hover);
     --mk-protyle-content-scrollbar-thumb--active: var(--mk-filetree-scrollbar-thumb--active);
 
+    --mk-protyle-blockquote-color: rgb(236, 236, 238);
+
         // 设置
     // --mk-settings-label-background: 
     --mk-settings-label--hover: #f5f5f5;
@@ -60,11 +62,16 @@
 
     // [块]
     --mk-block-header-h1: #202124;
-    --mk-block-header-h2: #2E75B5;
-    --mk-block-header-h3: #BF9000;
-    --mk-block-header-h4: #70AD47;
-    --mk-block-header-h5: #E84C22;
-    --mk-block-header-h6: #8064A2;
+    --mk-block-header-h2: #202124;
+    --mk-block-header-h3: #202124;
+    --mk-block-header-h4: #202124;
+    --mk-block-header-h5: #202124;
+    --mk-block-header-h6: #202124;
+    // --mk-block-header-h2: #2E75B5;
+    // --mk-block-header-h3: #BF9000;
+    // --mk-block-header-h4: #70AD47;
+    // --mk-block-header-h5: #E84C22;
+    // --mk-block-header-h6: #8064A2;
 
     --mk-block-header-background-h1: rgba(32, 33, 36, 0.2);
     --mk-block-header-background-h2: rgba(46, 118, 181, 0.2);
@@ -79,7 +86,8 @@
 :root[data-theme-mode="dark"] {
 
     // [全局]
-    --mk-background: #191919;
+    // --mk-background: #191919;
+    --mk-background: #111111;
     --mk-layout-shadow: rgba(0, 0, 0, 0.4);
     
     // toolbar 顶部工具栏
@@ -114,7 +122,7 @@
 
 
     // dock
-    --mk-dock-background: #333333;
+    --mk-dock-background: #222222;
     --mk-dock-item-color: #727272;
     --mk-dock-item-background: #2b2b2b;
     --mk-dock-item-svg-color--hover: #f4f4f4;
@@ -126,6 +134,8 @@
     --mk-protyle-content-scrollbar-thumb: var(--mk-scrollbar-thumb);
     --mk-protyle-content-scrollbar-thumb--hover: var(--mk-filetree-scrollbar-thumb--hover);
     --mk-protyle-content-scrollbar-thumb--active: var(--mk-filetree-scrollbar-thumb--active);
+
+    --mk-protyle-blockquote-color: #363636;
 
     // 设置
     // --mk-settings-label-background: 
@@ -139,10 +149,15 @@
 
     // [块]
     --mk-block-header-h1: #cbd1d9;
-    --mk-block-header-h2: #2E75B5;
-    --mk-block-header-h3: #BF9000;
-    --mk-block-header-h4: #70AD47;
-    --mk-block-header-h5: #E84C22;
-    --mk-block-header-h6: #8064A2;
+    --mk-block-header-h2: #cbd1d9;
+    --mk-block-header-h3: #cbd1d9;
+    --mk-block-header-h4: #cbd1d9;
+    --mk-block-header-h5: #cbd1d9;
+    --mk-block-header-h6: #cbd1d9;
+    // --mk-block-header-h2: #2E75B5;
+    // --mk-block-header-h3: #BF9000;
+    // --mk-block-header-h4: #70AD47;
+    // --mk-block-header-h5: #E84C22;
+    // --mk-block-header-h6: #8064A2;
 
 }

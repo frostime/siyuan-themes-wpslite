@@ -6,17 +6,19 @@
     color: var(--mk-block-header-h#{$number});
     display: flex;
 
-    $header-content: "#";
+    @if $number == 1 or $number == 2 {
+      font-weight: 700;
+    } @else if $number == 3 {
+      font-weight: 500;
+    } @else {
+      font-weight: 400;
+    }
 
     &::before {
-      content: $header-content;
       margin-right: 0.2em;
     }
 
     &[fold="1"]::before {
-      content: $header-content;
-
-      // display: flex;
       position: static;
       height: 100% !important;
       width: unset;

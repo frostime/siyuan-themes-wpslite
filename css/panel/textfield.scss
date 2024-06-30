@@ -21,13 +21,13 @@
 //     line-height: 20px;
 // }
 
-.config__tab-container .b3-label {
+.config__tab-container .b3-label:not(.b3-label--inner) {
     padding: 16px;
     margin: 6px 24px;
     border-radius: 6px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.08);
     background-color: var(--mk-toolbar-item--active);
-    
+
     &:hover {
         background-color: var(--mk-settings-label--hover);
     }

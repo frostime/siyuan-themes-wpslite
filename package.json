@@ -1,8 +1,8 @@
 {
   "name": "siyuan-themes-wpslite",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "",
-  "main": "index.css",
+  "main": "theme.css",
   "scripts": {
     "build:css": "sass ./theme.scss:dist/theme.css --style compressed --embed-sources",
     "build:cp": "cp theme.json ./dist && cp *.png ./dist && cp README*.md ./dist",

@@ -1,0 +1,11 @@
+.b3-typography, .protyle-wysiwyg {
+    blockquote, .bq {
+        border-radius: 0px;
+        border-width: 0px;
+        background-color: var(--mk-protyle-blockquote-color);
+
+        padding: 4px 8px;
+
+        color: var(--b3-theme-on-background);
+    }
+}
