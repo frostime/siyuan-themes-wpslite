@@ -4,7 +4,17 @@
 }
 
 .b3-switch:after {
-    position: unset;
+    position: absolute;
+    height: 12px;
+    width: 12px;
+}
+
+.b3-switch:not(:checked):after {
+    left: 9px;
+}
+
+.b3-switch:checked::before, .b3-switch:checked::after {
+    left: 28px;
 }
 
 .b3-switch:checked:after {
